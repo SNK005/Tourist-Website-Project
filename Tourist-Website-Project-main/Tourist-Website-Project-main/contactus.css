@@ -1,0 +1,505 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*NavBar Styling*/
+
+.logo 
+{
+    width: 110px;
+    margin: 2vh;
+    margin-top: 4vh;
+}
+
+.navbar_div 
+{
+    position: relative;
+    width: 100%;
+    height: 10vh;
+}
+
+.navbar 
+{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #202e3e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.navbar_buttons_container 
+{
+    display: flex;
+    gap: 2vw;
+    margin-right: 15px;
+}
+
+.navbar_buttons 
+{
+    display: flex;
+    justify-content: center;
+    background-color: #202e3e;
+    color: white;
+    padding: 0.8vw;
+    border-radius: 2vw;
+    margin: 0;
+    display: inline-block;
+    transition: 0.3s ease; 
+    text-decoration: none;
+}
+
+.navbar_buttons:hover 
+{
+    background-color: rgb(255, 252, 252);
+    color: #010001;
+    transform: scale(1.05);
+}
+
+/*Media Queries for Navbar*/
+/* Media Query for Small Screens (Tablets - 768px and below) */
+
+@media (max-width: 768px) 
+{
+    .navbar 
+    {
+        flex-direction: column; 
+        align-items: center;
+        padding: 10px;
+        height: auto;
+    }
+    .logo 
+    {
+        width: 90px; 
+        margin: 0px;
+    }
+    .navbar_buttons_container 
+    {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 10px; 
+        width: 100%;
+    }
+    .navbar_buttons 
+    {
+        padding: 8px 12px; 
+        font-size: 14px; 
+    }
+}
+
+/* Media Query for Extra Small Screens (Mobile - 480px and below) */
+
+@media (max-width: 480px) 
+{
+    .navbar 
+    {
+        padding: 5px 0;
+    }
+    .logo 
+    {
+        width: 70px; 
+        margin: 0px;
+    }
+    .navbar_buttons_container 
+    {
+        gap: 5px; 
+    }
+    .navbar_buttons 
+    {
+        padding: 6px 8px; 
+        font-size: 12px; 
+    }
+}
+
+/*Styling For Body of Contact us*/
+
+body 
+{
+    background-color: rgb(255, 252, 252);
+    color: rgb(8, 8, 8);
+    margin-top: 16vh;
+}
+
+.Contact-Us 
+{
+    padding: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+.Contact-Us h1 
+{
+    font-family: "Baskerville Old Face";
+    color: #202e3e;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.contact-info p 
+{
+    font-size: 30px;
+    font-family: "Sitka Subheading";
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.contact-info ul 
+{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info li 
+{
+    margin: 0 20px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info li a:hover 
+{
+    color: #202e3e;
+}
+
+.contact-info li a 
+{
+    font-family: "Sitka Subheading";
+    text-decoration: none;
+    color: black;
+}
+
+form 
+{
+    width: 100%;
+}
+
+.form-item h3 
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #202e3e;
+}
+
+input, textarea 
+{
+    width: 60%;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    font-style: italic;
+    font-family: "Sitka Subheading";
+    box-shadow: 0 0 10px#202e3e;
+    transition: transform 1s ease-in-out; 
+}
+
+input:hover, textarea:hover 
+{
+    transform: scale(1.1);
+}
+
+form button 
+{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #202e3e;
+    color: white;
+    font-size: 1.6rem;
+    padding: 12px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+form button:hover 
+{
+    background-color: rgb(255, 252, 252);
+    color: #010001;
+    transform: scale(1.05);
+}
+
+/*Media Queries for Body of Contact us*/
+/* Media Query for Tablets (max-width: 768px) */
+
+@media (max-width: 768px) 
+{
+    .Contact-Us h1 
+    {
+        font-size: 40px;
+    }
+
+    .contact-info p 
+    {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contact-info ul 
+    {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center; 
+    }
+
+    .contact-info li 
+    {
+        font-size: 40px;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .contact-info li a 
+    {
+        font-size: 18px;
+        display: inline-block; 
+        text-align: center;
+    }
+
+    form input, form textarea 
+    {
+        width: 80%;
+        font-size: 20px;
+        padding: 8px 0;
+    }
+
+    form button 
+    {
+        padding: 10px 20px;
+        font-size: 1.4rem;
+    }
+}
+
+/* Media Query for Mobile Screens (max-width: 480px) */
+
+@media (max-width: 480px) 
+{
+    .Contact-Us h1 
+    {
+        font-size: 30px;
+    }
+
+    .contact-info p 
+    {
+        font-size: 16px;
+    }
+
+    .contact-info ul 
+    {
+        flex-direction: column;
+        padding: 5px;
+        text-align: center; 
+    }
+
+    .contact-info li 
+    {
+        font-size: 30px;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .contact-info li a 
+    {
+        font-size: 16px;
+        display: inline-block;
+        text-align: center; 
+    }
+    form input, form textarea 
+    {
+        width: 90%;
+        font-size: 18px;
+        padding: 6px 0;
+    }
+
+    form button 
+    {
+        padding: 8px 16px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Media Query for Extra Small Mobile Screens (max-width: 375px) */
+@media (max-width: 375px) 
+{
+    .Contact-Us h1 
+    {
+        font-size: 26px;
+    }
+
+    .contact-info p 
+    {
+        font-size: 14px;
+    }
+
+    .contact-info ul 
+    {
+        flex-direction: column;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .contact-info li 
+    {
+        font-size: 26px;
+        margin: 8px 0;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .contact-info li a 
+    {
+        font-size: 14px;
+        display: inline-block; 
+        text-align: center; 
+    }
+
+    form input, form textarea 
+    {
+        width: 90%;
+        font-size: 16px;
+        padding: 5px 0;
+    }
+
+    form button 
+    {
+        padding: 6px 12px;
+        font-size: 1rem;
+    }
+}
+/*Styling for Footer*/
+.images_container 
+{
+    padding: 4vh;
+    background-color: #202e3e;
+    color: white;
+}
+
+.footer 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    font-size: 20px;
+    text-align: center; 
+}
+
+.instagram-logo 
+{
+    width: 2vw;
+    margin-left: 45%;
+    cursor: pointer;
+    transform: transform 0.3s ease;
+    border-radius: 50%;
+    background-color: #202e3e;
+}
+
+.instagram-logo:hover 
+{
+    transform: scale(1.1);
+}
+
+.mail-logo 
+{
+    width: 2vw;
+    margin-left: 1%;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #202e3e;
+    transform: transform 0.3s ease;
+}
+
+.mail-logo:hover 
+{
+    transform: scale(1.1);
+}
+
+.facebook-logo 
+{
+    width: 2vw;
+    margin-left: 1%;
+    cursor: pointer;
+    transform: transform 0.3s ease;
+    border-radius: 50%;
+    background-color: #202e3e;
+}
+
+.facebook-logo:hover 
+{
+    transform: scale(1.1);
+}
+
+.twitter-logo 
+{
+    width: 2vw;
+    margin-left: 1%;
+    cursor: pointer;
+    transform: transform 0.3s ease;
+    border-radius: 50%;
+    background-color: #202e3e;
+}
+
+.twitter-logo:hover 
+{
+    transform: scale(1.1);
+}
+/*Media Quyries for Footer*/
+@media (max-width: 768px) 
+{
+    .images_container 
+    {
+        display: flex; 
+        flex-direction: row;
+        justify-content: center; 
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+}
+
+/* Media Query for Extra Small Screens (Mobile - 480px and below) */
+@media (max-width: 480px) 
+{
+    .images_container 
+    {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center; 
+        align-items: center;
+        flex-wrap: wrap; 
+        gap: 4vw; 
+    }
+    .instagram-logo
+    {
+        width: 6vw;
+        margin-right: 2vw;
+    }
+    .mail-logo, 
+    .facebook-logo, 
+    .twitter-logo 
+    {
+        width: 6vw;
+        margin-right: 1vw;
+    }
+}
